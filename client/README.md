@@ -11,6 +11,8 @@ Soon I'll break these three major tasks into some more small pieces so that it b
 
 ## How to run the project
 
+(Website isn't optimized for smaller screen, please run it on pc or laptop.)
+
 Frontend:
 > cd client
 > npm install
@@ -21,9 +23,9 @@ Backend:
 > cd api
 > npm install
 > npm start
-(Your backend starts running on localhost:5000, though you won't see anything there)
+(Your backend starts running on `localhost:5000`, though you won't see anything there. To see data, you can browse `localhost:5000/api/posts` etc.)
 
-(MongoDB cloud api connention is in dot env file which is ignored by git because of the .gitignore file. You need that file as that contains the database connection link. Without that, you won't be able to get connection with mongoDB.)
+(N.B: MongoDB cloud api connention is in `dot env` file which is ignored by git because of the .gitignore file. You need that file as that contains the database connection link. Without that, you won't be able to get connection with mongoDB.)
 
 There are 2 ways to solve this.
 1. Ask me to give my secret connection link through mail.
@@ -33,6 +35,8 @@ There are 2 ways to solve this.
 > Create a cluster.
 > Create a user
 > Click on `connect` to connect with this code.
+
+Then do this in your code:
 > Create a `.env` file inside api folder.
 > inside that, write MONGO_URL = mongodb+srv://<USERNAME>:<PASSWORD>@cluster0.wrpkf.mongodb.net/<DATABASE_NAME>?retryWrites=true&w=majority
 > SAVE
