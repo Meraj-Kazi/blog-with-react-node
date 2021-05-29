@@ -36,17 +36,22 @@ There are 2 ways to solve this.
 > Create a `.env` file inside api folder.
 > inside that, write MONGO_URL = mongodb+srv://<USERNAME>:<PASSWORD>@cluster0.wrpkf.mongodb.net/<DATABASE_NAME>?retryWrites=true&w=majority
 > SAVE
+(If doesn't work, let me know thorugh issues.)
+
+How to Register:
+> Register with unique username, mail address & password. 
+
+How to Login:
+> Login with registered username & password. 
 
 
-
-
-## Available Scripts
+## Available Scripts 
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
