@@ -102,6 +102,8 @@ export default function SinglePost() {
           </button>
         )}
       </div>
+      <button type="submit"><span>100</span> Up vote</button>
+      <button type="submit"><span>7</span> Down vote</button>
     </div>
   );
 }
