@@ -17,7 +17,7 @@ export default function Comments() {
                   Author:
                   <b className="singlePostAuthor">
                     <Link className="link" to="/posts?username=aaa">
-                      Safak
+                      Sadik
                     </Link>
                   </b>
                 </span>
