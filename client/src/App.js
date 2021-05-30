@@ -10,6 +10,7 @@ import { useContext } from "react";
 import { Context } from "./context/Context";
 import CommenterReg from "./pages/CommenterReg/CommenterReg";
 import CommenterLogin from "./pages/CommenterLogin/CommenterLogin";
+import CommentWrite from "./pages/CommentWrite/CommentWrite";
 
 function App() {
   const { user } = useContext(Context);
@@ -27,8 +28,9 @@ function App() {
         <Route path="/post/:postId">
           <Single />
         </Route>
-        <Route path="/CommenterReg">{user ? <Home /> : <CommenterReg /> }</Route>
-        <Route path="/CommenterLogin">{user ? <Home /> : <CommenterLogin /> }</Route>
+        <Route path="/CommenterReg">{user ? <Home /> : <CommenterReg />}</Route>
+        <Route path="/CommenterLogin">{user ? <Home /> : <CommenterLogin />}</Route>
+        <Route path="/CommentWrite">{user ? <CommentWrite /> : <Register />}</Route>
       </Switch>
     </Router>
   );

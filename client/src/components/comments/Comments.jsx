@@ -26,22 +26,17 @@ export default function Comments() {
               <p className="singlePostDesc">
                 Nice writings. Keep it up!
               </p>
+              <br/>
 
-              <div className="write">
-                <form className="writeForm">
-                  <div className="writeFormGroup">
-                    <textarea
-                      className="writeInput writeText"
-                      placeholder="Write your comment..."
-                      type="text"
-                      autoFocus={true}
-                    />
-                  </div>
-                  <button className="writeSubmit" type="submit">
-                    Publish
-                  </button>
-                </form>
-              </div>
+              <p>Share your thoughts in comments: </p>
+                <button>
+                  <Link className="link" to="/CommentWrite">
+                    Make a Comment
+                  </Link>
+                </button>
+
+                <br/>
+                <br/>
 
             </div>
     </div>
