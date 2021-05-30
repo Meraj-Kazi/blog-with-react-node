@@ -26,7 +26,7 @@ export default function Login() {
   return (
     <div className="login">
       <span className="loginTitle">Login as Blogger</span>
-      <p>If you want to LOGIN as Blogger, then click here: </p>
+      <p>If you want to LOGIN as Commenter, then click here: </p>
                 <button>
                   <Link className="link" to="/CommenterLogin">
                     Commenter Login

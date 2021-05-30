@@ -26,6 +26,23 @@ export default function Comments() {
               <p className="singlePostDesc">
                 Nice writings. Keep it up!
               </p>
+
+              <div className="write">
+                <form className="writeForm">
+                  <div className="writeFormGroup">
+                    <textarea
+                      className="writeInput writeText"
+                      placeholder="Write your comment..."
+                      type="text"
+                      autoFocus={true}
+                    />
+                  </div>
+                  <button className="writeSubmit" type="submit">
+                    Publish
+                  </button>
+                </form>
+              </div>
+
             </div>
     </div>
     );
