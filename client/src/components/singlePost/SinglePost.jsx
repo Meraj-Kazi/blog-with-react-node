@@ -101,31 +101,6 @@ export default function SinglePost() {
             Update
           </button>
         )}
-        <div>
-          <p className="postComment"><strong>Comments</strong></p>
-          <input type="text" />
-          <button type="submit">Comment</button>
-          <ul>
-            <li>
-              <ul>
-                <li className="commentWriter"><strong>Shibli</strong></li>
-                <li className="commentDesc">Great Work! Keep it up.</li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li className="commentWriter"><strong>Shibli</strong></li>
-                <li className="commentDesc">Great Work! Keep it up.</li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li className="commentWriter"><strong>Shibli</strong></li>
-                <li className="commentDesc">Great Work! Keep it up.</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
   );

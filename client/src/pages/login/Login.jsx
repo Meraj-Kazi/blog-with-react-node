@@ -25,7 +25,13 @@ export default function Login() {
 
   return (
     <div className="login">
-      <span className="loginTitle">Login</span>
+      <span className="loginTitle">Login as Blogger</span>
+      <p>If you want to LOGIN as Blogger, then click here: </p>
+                <button>
+                  <Link className="link" to="/CommenterLogin">
+                    Commenter Login
+                  </Link>
+                </button>
       <form className="loginForm" onSubmit={handleSubmit}>
         <label>Username</label>
         <input

@@ -25,7 +25,13 @@ export default function Register() {
   };
   return (
     <div className="register">
-      <span className="registerTitle">Register</span>
+      <span className="registerTitle">Register as Blogger</span>
+      <p>If you want to REGISTER as commenter, then click here: </p>
+      <button>
+        <Link className="link" to="/commenterReg">
+          Commenter Registration
+        </Link>
+      </button>
       <form className="registerForm" onSubmit={handleSubmit}>
         <label>Username</label>
         <input

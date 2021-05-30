@@ -8,6 +8,8 @@ import Register from "./pages/register/Register";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
+import CommenterReg from "./pages/CommenterReg/CommenterReg";
+import CommenterLogin from "./pages/CommenterLogin/CommenterLogin";
 
 function App() {
   const { user } = useContext(Context);
@@ -25,6 +27,8 @@ function App() {
         <Route path="/post/:postId">
           <Single />
         </Route>
+        <Route path="/CommenterReg">{user ? <Home /> : <CommenterReg /> }</Route>
+        <Route path="/CommenterLogin">{user ? <Home /> : <CommenterLogin /> }</Route>
       </Switch>
     </Router>
   );
