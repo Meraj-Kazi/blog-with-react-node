@@ -4,7 +4,9 @@ const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/users");
+const CommentersRoute = require("./routes/commenters");
 const postRoute = require("./routes/posts");
+const commentRoute = require("./routes/comments");
 const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 const path = require("path");
@@ -39,7 +41,9 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
+app.use("/api/commenters", CommentersRoute);
 app.use("/api/posts", postRoute);
+app.use("/api/comments", commentRoute);
 app.use("/api/categories", categoryRoute);
 
 app.listen("5000", () => {
